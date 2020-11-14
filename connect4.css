@@ -1,0 +1,55 @@
+/* game board table */
+
+.row {
+	background-color: white;
+}
+table {
+	background-color: yellowgreen;
+}
+#board td {
+	width: 50px;
+	height: 50px;
+	border: solid 1px;
+	background-color: white;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+	/* TODO: make into circles */
+	margin: 5px;
+	width: 80%;
+	height: 80%;
+	border-radius: 50%;
+}
+.piece.p1 {
+	background-color: royalblue;
+}
+.piece.p2 {
+	background-color: red;
+}
+/* TODO: make pieces red/blue,  depending on player 1/2 piece */
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+	border: dashed 1p red;
+}
+
+#column-top td:hover {
+	background-color: gold;
+}
+body {
+	position: fixed;
+	background-image: url(https://www.nicepng.com/png/detail/352-3527020_total-downloads-hasbro-grab-and-go-connect-4.png);
+	background-position: bottom;
+	top: 15%;
+	left: 30%;
+}
+#heading {
+	border-style: dashed;
+	text-align: center;
+	margin-top: 40px;
+	border-color: lightgreen;
+	background-color: yellow;
+}
